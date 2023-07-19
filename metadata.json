@@ -1,0 +1,95 @@
+{
+    "name": "tiles",
+    "description": "tiles",
+    "version": "2",
+    "minzoom": "0",
+    "maxzoom": "6",
+    "center": "132.187500,-2.807993,6",
+    "bounds": "94.665393,-17.540642,141.344100,12.980050",
+    "type": "overlay",
+    "format": "pbf",
+    "generator": "tippecanoe v1.36.0",
+    "generator_options": "tippecanoe -zg --force -e tiles --no-tile-compression boundaries_with_ocean.geojson",
+    "vector_layers": [
+        {
+            "id": "boundaries_with_ocean",
+            "description": "",
+            "minzoom": 0,
+            "maxzoom": 6,
+            "fields": {
+                "category": "String",
+                "id": "Number",
+                "shapeName": "String"
+            }
+        }
+    ],
+    "tilestats": {
+        "layerCount": 1,
+        "layers": [
+            {
+                "layer": "boundaries_with_ocean",
+                "count": 15,
+                "geometry": "Polygon",
+                "attributeCount": 3,
+                "attributes": [
+                    {
+                        "attribute": "category",
+                        "count": 3,
+                        "type": "string",
+                        "values": [
+                            "Country",
+                            "Ocean",
+                            "Other Country"
+                        ]
+                    },
+                    {
+                        "attribute": "id",
+                        "count": 15,
+                        "type": "number",
+                        "values": [
+                            1,
+                            10,
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9
+                        ],
+                        "min": 1,
+                        "max": 15
+                    },
+                    {
+                        "attribute": "shapeName",
+                        "count": 15,
+                        "type": "string",
+                        "values": [
+                            "Australia",
+                            "Brunei Darussalam",
+                            "Cambodia",
+                            "Federated States of Micronesia",
+                            "Indonesia",
+                            "Malaysia",
+                            "Myanmar",
+                            "Ocean",
+                            "PHL",
+                            "Palau",
+                            "Papua New Guinea",
+                            "Singapore",
+                            "Thailand",
+                            "Timor-Leste",
+                            "Viet Nam"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
